@@ -14,6 +14,14 @@ function App() {
     location: "Sweden"
   }
 
+  const artists = [
+    "Britney Srears",
+    "Tori Amos",
+    "Star Horse",
+    "Beatles",
+    "Rolling Stones"
+  ]
+
   return (
     <div>
       <Greeting
@@ -25,7 +33,13 @@ function App() {
   <UserDataInfo userData={userData.lastName} />
   <UserDataInfo userData={userData.yearOfBirth} />
   <UserDataInfo userData={userData.location} />
-  <UserDataInfo userData={userData.username} />
+
+  <h2>My Favorite Artists</h2>
+  <ul>
+    {artists.map((item, index) => {
+      return <li key={index}>{item}</li>
+    })}
+  </ul>
 
     </div>
   );
