@@ -9,9 +9,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Image image={logo} title='React Logo'/>
-        <Image image='http://placekitten.com/200/300' title='Cat'/>
-        <Image image='http://placekitten.com/300/400' title='Cat 2'/>
+
+        <Image description='It is a logo' image={logo} title='React Logo'/>
+        <Image description='It is a cat' image='http://placekitten.com/200/300' title='Cat'/>
+        <Image description='It is a cat also' image='http://placekitten.com/300/400' title='Cat 2'/>
 
         <Paragraph title="Information">
           Edit <code>src/App.js</code> and save to reload.
