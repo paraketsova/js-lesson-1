@@ -15,6 +15,7 @@ export default function Image(props) {
     <div>
       <Link url={props.image} text={props.title} />
       <img onClick={(onClickHandler)} src={props.image} alt='logo' />
+      <strong>{props.description}</strong>
       <p>{counter}</p>
     </div>
   )
