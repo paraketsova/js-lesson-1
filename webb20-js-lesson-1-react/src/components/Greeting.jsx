@@ -24,7 +24,7 @@ function Greeting({greeting, firstName, yearOfBirth,  usersSex}) {
   }
   
   return (
-    <h1>{ageSpecificGreeting} {name}</h1>
+    <h1>{ageSpecificGreeting}, {name}</h1>
   )
 }
 

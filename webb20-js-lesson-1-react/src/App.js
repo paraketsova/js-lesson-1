@@ -31,21 +31,20 @@ function App() {
         firstName={userData.firstName}
         yearOfBirth={userData.yearOfBirth}
         usersSex={userData.usersSex}
-    />
-  <UserDataInfo userData={userData.username} />
-  <UserDataInfo userData={userData.firstName} />
-  <UserDataInfo userData={userData.lastName} />
-  <UserDataInfo userData={userData.yearOfBirth} />
-  <UserDataInfo userData={userData.location} />
-  <UserDataInfo userData={userData.sex} />
+      />
+      <UserDataInfo userData={userData.username} />
+      <UserDataInfo userData={userData.firstName} />
+      <UserDataInfo userData={userData.lastName} />
+      <UserDataInfo userData={userData.yearOfBirth} />
+      <UserDataInfo userData={userData.location} />
+      <UserDataInfo userData={userData.sex} />
 
-  <h2>My Favorite Artists</h2>
-  <ul>
-    {artists.map((item, index) => {
-      return <li key={index}>{item}</li>
-    })}
-  </ul>
-
+      <h2>My Favorite Artists</h2>
+      <ul>
+        {artists.map((item, index) => {
+          return <li key={index}>{item}</li>
+        })}
+      </ul>
     </div>
   );
 }
